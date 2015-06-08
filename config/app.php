@@ -13,7 +13,7 @@ return [
 	|
 	*/
 
-	'debug' => env('APP_DEBUG', false),
+	'debug' => env('APP_DEBUG', true),
 
 	/*
 	|--------------------------------------------------------------------------
@@ -144,6 +144,12 @@ return [
 		'App\Providers\ConfigServiceProvider',
 		'App\Providers\EventServiceProvider',
 		'App\Providers\RouteServiceProvider',
+        'App\Repositories\Storage\StorageServiceProvider',
+
+		/*
+		 * External Providers...
+		 */
+		'Vinkla\Instagram\InstagramServiceProvider',
 
 	],
 
@@ -192,6 +198,7 @@ return [
 		'URL'       => 'Illuminate\Support\Facades\URL',
 		'Validator' => 'Illuminate\Support\Facades\Validator',
 		'View'      => 'Illuminate\Support\Facades\View',
+		'Instagram' => 'Vinkla\Instagram\Facades\Instagram'
 
 	],
 
