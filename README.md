@@ -36,14 +36,15 @@ Requeriments:
 
 2) $ cd API_INSTAGRAM
 
-3) $ sudo composer install (It may take a few minutes)
+3) $ sudo composer self-update
 
-4) $ phpunit (run test)
+4) $ sudo composer install (It may take a few minutes)
 
-5) $ php artisan route:list (see the endpoint)
+5) $ phpunit (run test)
 
-4) $ php artisan serve (turn on a test enviroment in http://localhost:8000)
+6) $ php artisan route:list (see the endpoint)
 
-5) Try GET http://localhost:8000/locations/instagram/{media_id}
+7) $ php artisan serve (turn on a test enviroment in http://localhost:8000)
 
-6) Enjoy!
+8) Try GET http://localhost:8000/locations/instagram/{media_id}
+
